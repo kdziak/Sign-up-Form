@@ -6,8 +6,81 @@
   font-style: normal;
 
 }
+body {
+  margin: 0;
+}
+
+.logo {
+  position: absolute;
+  width: 15%;
+  height: auto;
+  left: 25px;
+  top: 15vh;
+}
+
+
+
+.plant {
+  max-height: 100%;
+  
+}
+.row {
+  display: flex;
+}
+
+.left,
+.right {
+  float: left;
+  height: 100vh;
+  
+  
+}
+
+.left {
+  background-color: blue;
+  width: 35%;
+  
+}
+
+.right {
+  width: 75%;
+  background-color: rgb(236, 229, 229);
+  
+}
 
 h1 {
-  font-family: 'albaregular';
-  color: red;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  padding: 20px;
+}
+
+.formwrapper {
+  background-color: white;
+  padding: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 5px 10px rgb(199, 107, 107);
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+
+button {
+  background-color: green;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.account {
+  color: rgb(207, 11, 11);
+  padding: 10px;
+}
+
+.buttonholder {
+  padding: 10px;
 }
