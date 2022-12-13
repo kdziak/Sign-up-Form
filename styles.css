@@ -7,51 +7,72 @@
 
 }
 body {
+  display: flex;
+  flex-direction: row;
   margin: 0;
 }
 
-.logo {
-  position: absolute;
-  width: 15%;
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
   height: auto;
-  left: 25px;
-  top: 15vh;
+  background-image: url("plants.jpg");
+  background-size: cover;
 }
 
+.right {
+  background-color: rgb(236, 229, 229);
+  width: auto;
+  height: 100vh;
+}
 
+.rightholder {
+  padding: 75px 20px;
+}
 
 .plant {
   max-height: 100%;
-  
+  z-index: -2;
 }
-.row {
+
+.banner {
   display: flex;
+  flex-direction: row;
+  position: fixed;
+  background-color: black;
+  opacity: .4;
+  z-index: 1;
+  top: 150px;
+  height: 150px;
+  width: 35vw;
+  min-height: 150px;
+  overflow: hidden;
 }
 
-.left,
-.right {
-  float: left;
-  height: 100vh;
-  
-  
+.credit {
+  position: absolute;
+  color: white;
+  bottom: 10px;
+  left: 30px; 
 }
 
-.left {
-  background-color: blue;
-  width: 35%;
-  
+.logo {
+  position: fixed;
+  top: 175px;
+  left: 50px;
+  width: 70px;
+  height: auto; 
+  z-index: 2;
 }
 
-.right {
-  width: 75%;
-  background-color: rgb(236, 229, 229);
-  
-}
-
-h1 {
-  padding-top: 100px;
-  padding-bottom: 50px;
-  padding: 20px;
+.Name{
+  z-index: 2;
+  font-size: 3em;
+  position: fixed;
+  top: 165px;
+  left: 140px;
+  color: white;
 }
 
 .formwrapper {
@@ -64,8 +85,8 @@ h1 {
 form {
   display: grid;
   grid-template-columns: auto auto;
+  font-family: 'albaregular';
 }
-
 
 button {
   background-color: green;
@@ -78,9 +99,5 @@ button {
 
 .account {
   color: rgb(207, 11, 11);
-  padding: 10px;
-}
-
-.buttonholder {
   padding: 10px;
 }
