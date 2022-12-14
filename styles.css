@@ -42,7 +42,7 @@ input:focus{
   box-shadow: 2px 2px rgb(211, 208, 208);;
 }
 
-input[type=password] :invalid {
+input[type=password]:invalid {
   border-color: red;
 }
 
@@ -136,3 +136,4 @@ a {
   color: #596D48;
   font-family: 'Courier New', Courier, monospace;
 }
+
